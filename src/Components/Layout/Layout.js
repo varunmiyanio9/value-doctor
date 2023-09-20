@@ -1,5 +1,7 @@
 import React from 'react';
 
-export const Layout = props => {
+const Layout = props => {
 	return <div>Layout</div>;
 };
+
+export default Layout;

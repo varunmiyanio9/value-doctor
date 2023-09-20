@@ -1,5 +1,7 @@
 import React from 'react';
 
-export const SideNav = props => {
+const SideNav = props => {
 	return <div>SideNav</div>;
 };
+
+export default SideNav;

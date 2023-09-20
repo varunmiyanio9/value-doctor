@@ -1,5 +1,7 @@
 import React from 'react';
 
-export const Sow = props => {
+const Sow = props => {
 	return <div>Sow</div>;
 };
+
+export default Sow;
