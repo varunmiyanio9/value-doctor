@@ -1,40 +1,6 @@
 import * as React from 'react';
 import { Drawer, DrawerContent } from '@progress/kendo-react-layout';
-
-const items = [
-	{
-		text: 'Inbox',
-		icon: 'k-i-inbox',
-		selected: true,
-		route: '/',
-	},
-	{
-		separator: true,
-	},
-	{
-		text: 'Notifications',
-		icon: 'k-i-bell',
-		route: '/notifications',
-	},
-	{
-		text: 'Calendar',
-		icon: 'k-i-calendar',
-		route: '/calendar',
-	},
-	{
-		separator: true,
-	},
-	{
-		text: 'Attachments',
-		icon: 'k-i-hyperlink-email',
-		route: '/attachments',
-	},
-	{
-		text: 'Favourites',
-		icon: 'k-i-star-outline',
-		route: '/favourites',
-	},
-];
+import * as CONST from './const';
 
 const SideNav = props => {
 	const { expanded, setExpanded } = props;
@@ -51,7 +17,7 @@ const SideNav = props => {
 				position={'start'}
 				mode={'push'}
 				mini={true}
-				items={items.map(item => ({
+				items={CONST.ITEMS.map(item => ({
 					...item,
 					selected: window.location.pathname?.includes(item.text),
 				}))}
