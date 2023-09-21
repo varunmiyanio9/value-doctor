@@ -91,10 +91,10 @@ const Dashboard = props => {
 			</div>
 			<div className='card-component'>
 				<div className='card-component-item'>
-					<BarChart />
+					<BarChart data={CONST.barChart1} />
 				</div>
 				<div className='card-component-item'>
-					<BarChart />
+					<BarChart data={CONST.barChart1} />
 				</div>
 			</div>
 		</div>

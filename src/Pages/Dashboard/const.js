@@ -19906,3 +19906,8 @@ export const ordersModelFields = {
 	recurrenceId: 'recurrenceID',
 	recurrenceExceptions: 'recurrenceException',
 };
+
+export const barChart1 = [
+	[1, 2],
+	[2, 1],
+];
