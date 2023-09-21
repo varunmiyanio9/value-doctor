@@ -1,13 +1,15 @@
 import * as React from 'react';
 import { Drawer, DrawerContent } from '@progress/kendo-react-layout';
+import { useNavigate } from 'react-router-dom';
 import * as CONST from './const';
+import './SideNav.scss';
 
 const SideNav = props => {
-	const { expanded, setExpanded } = props;
+	const { expanded } = props;
+	const navigate = useNavigate();
 
 	const onSelect = e => {
-		props.history.push(e.itemTarget.props.route);
-		setExpanded(!expanded);
+		navigate(e.itemTarget.props.route);
 	};
 
 	return (
@@ -22,7 +24,9 @@ const SideNav = props => {
 					selected: window.location.pathname?.includes(item.text),
 				}))}
 				onSelect={onSelect}>
-				<DrawerContent style={{ height: 1066 }}>{props.children}</DrawerContent>
+				<DrawerContent style={{ height: '100%' }}>
+					{props.children}
+				</DrawerContent>
 			</Drawer>
 		</React.Fragment>
 	);
