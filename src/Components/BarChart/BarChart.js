@@ -5,23 +5,17 @@ import {
 	ChartSeriesItem,
 } from '@progress/kendo-react-charts';
 import 'hammerjs';
-const [firstSeries, secondSeries] = [
-	[1, 2, 3, 5],
-	[1, 1, 1, 1],
-];
-const BarChart = () => (
-	<Chart>
-		<ChartSeries>
-			<ChartSeriesItem
-				type='column'
-				stack={{
-					type: '100%',
-				}}
-				data={firstSeries}
-			/>
-			<ChartSeriesItem type='column' data={secondSeries} />
-		</ChartSeries>
-	</Chart>
-);
+
+const BarChart = props => {
+	const [firstSeries, secondSeries] = props.data;
+	return (
+		<Chart>
+			<ChartSeries>
+				<ChartSeriesItem type='column' data={firstSeries} />
+				<ChartSeriesItem type='column' data={secondSeries} />
+			</ChartSeries>
+		</Chart>
+	);
+};
 
 export default BarChart;
