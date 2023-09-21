@@ -11,7 +11,7 @@ const SideNav = props => {
 	};
 
 	return (
-		<div>
+		<React.Fragment>
 			<Drawer
 				expanded={expanded}
 				position={'start'}
@@ -22,9 +22,9 @@ const SideNav = props => {
 					selected: window.location.pathname?.includes(item.text),
 				}))}
 				onSelect={onSelect}>
-				<DrawerContent>{props.children}</DrawerContent>
+				<DrawerContent style={{ height: 1066 }}>{props.children}</DrawerContent>
 			</Drawer>
-		</div>
+		</React.Fragment>
 	);
 };
 export default SideNav;

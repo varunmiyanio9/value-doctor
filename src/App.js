@@ -12,10 +12,11 @@ function App() {
 		<div className='App'>
 			<div className='ApplicationWrapper'>
 				<Header expanded={expanded} setExpanded={setExpanded} />
-				<SideNav expanded={expanded} setExpanded={setExpanded} />
-				<div className='ContentWrapper'>
-					<Routes />
-				</div>
+				<SideNav expanded={expanded} setExpanded={setExpanded}>
+					<div className='ContentWrapper'>
+						<Routes />
+					</div>
+				</SideNav>
 				{/* <Footer /> */}
 			</div>
 		</div>

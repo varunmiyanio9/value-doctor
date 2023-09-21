@@ -1,7 +1,7 @@
 export const ITEMS = [
 	{
-		text: 'Inbox',
-		icon: 'k-i-inbox',
+		text: 'Dashboard',
+		icon: 'k-i-grid',
 		selected: true,
 		route: '/',
 	},
