@@ -16,7 +16,7 @@ const Header = props => {
 	const { expanded, setExpanded } = props;
 	return (
 		<React.Fragment>
-			<AppBar>
+			<AppBar className='AppBar'>
 				<AppBarSection>
 					<button
 						className='k-button k-button-md k-rounded-md k-button-flat k-button-flat-base'
@@ -32,7 +32,7 @@ const Header = props => {
 				/>
 
 				<AppBarSection>
-					<h1 className='title'>KendoReact</h1>
+					<h1 className='title'>o9</h1>
 				</AppBarSection>
 
 				<AppBarSpacer
@@ -42,7 +42,7 @@ const Header = props => {
 				/>
 
 				<AppBarSection>
-					<ul>
+					{/* <ul>
 						<li>
 							<span>What's New</span>
 						</li>
@@ -52,7 +52,7 @@ const Header = props => {
 						<li>
 							<span>Contacts</span>
 						</li>
-					</ul>
+					</ul> */}
 				</AppBarSection>
 
 				<AppBarSpacer />
@@ -77,7 +77,7 @@ const Header = props => {
 
 				<AppBarSection>
 					<Avatar type='image'>
-						<img src={kendokaAvatar} alt='KendoReact Layout Kendoka Avatar' />
+						<img src={kendokaAvatar} alt='o9 Layout Kendoka Avatar' />
 					</Avatar>
 				</AppBarSection>
 			</AppBar>
