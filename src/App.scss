@@ -1,5 +1,6 @@
 body {
-	background: #dfdfdf;
+	// background: #dfdfdf;
+	background-color: rgb(244, 245, 248);
 }
 .App {
 	text-align: center;
@@ -18,6 +19,7 @@ div {
 	// margin: 0 auto;
 	padding: 20px 0 100px 0;
 	margin: 0 30px;
+	min-height: 80vh;
 	@media (max-width: 700px) {
 		padding: 30px 15px 100px 15px;
 	}

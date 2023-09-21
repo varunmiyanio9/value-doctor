@@ -15,4 +15,10 @@ export const ITEMS = [
 		route: '/sow',
 		style: { padding: 20 },
 	},
+	{
+		text: 'Inputs',
+		icon: 'k-i-file',
+		route: '/inputs',
+		style: { padding: 20 },
+	},
 ];
