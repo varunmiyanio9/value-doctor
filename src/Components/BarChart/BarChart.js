@@ -3,16 +3,49 @@ import {
 	Chart,
 	ChartSeries,
 	ChartSeriesItem,
+	ChartTitle,
+	ChartValueAxis,
+	ChartValueAxisItem,
+	ChartXAxisItem,
+	ChartXAxis,
+	ChartLegend,
 } from '@progress/kendo-react-charts';
 import 'hammerjs';
 
 const BarChart = props => {
-	const [firstSeries, secondSeries] = props.data;
+	const { chartName, data } = props;
 	return (
 		<Chart>
+			{chartName && <ChartTitle text={chartName} />}
+			<ChartValueAxis>
+				<ChartValueAxisItem
+					// title={{
+					// 	text: 'Miles',
+					// }}
+					min={0}
+					max={100}
+				/>
+			</ChartValueAxis>
+			<ChartLegend position='bottom' orientation='horizontal' />
 			<ChartSeries>
-				<ChartSeriesItem type='column' data={firstSeries} />
-				<ChartSeriesItem type='column' data={secondSeries} />
+				<ChartSeriesItem
+					color={'#000'}
+					type='column'
+					data={[data[0]]}
+					name='AS-IS'
+				/>
+				<ChartSeriesItem
+					color={'#F7C62F'}
+					type='column'
+					data={[data[1]]}
+					name='Planned'
+				/>
+				<ChartSeriesItem
+					color={'#55AB1D'}
+					type='column'
+					data={[data[2]]}
+					name='Current/Actual'
+				/>
 			</ChartSeries>
 		</Chart>
 	);

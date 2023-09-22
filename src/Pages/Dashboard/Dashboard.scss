@@ -3,8 +3,10 @@
 	margin-bottom: 50px;
 	display: flex;
 	justify-content: space-between;
-	gap: 50px;
+	gap: 30px;
 }
 .card-component .card-component-item {
 	flex: 1;
+	background-color: white;
+	height: 450px;
 }
