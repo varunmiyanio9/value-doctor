@@ -10,7 +10,7 @@ import './Header.scss';
 import adidasLogo from '../../assets/logo/adidas-logo.png';
 
 const kendokaAvatar =
-	'https://www.telerik.com/kendo-react-ui-develop/components/images/kendoka-react.png';
+	'https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200';
 
 const Header = props => {
 	const { expanded, setExpanded } = props;

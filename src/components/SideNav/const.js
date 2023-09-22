@@ -11,13 +11,13 @@ export const ITEMS = [
 	},
 	{
 		text: 'Sow',
-		icon: 'k-i-file',
+		icon: 'k-i-track-changes-enable',
 		route: '/sow',
 		style: { padding: 20 },
 	},
 	{
 		text: 'Inputs',
-		icon: 'k-i-file',
+		icon: 'k-i-paste-plain-text',
 		route: '/inputs',
 		style: { padding: 20 },
 	},
