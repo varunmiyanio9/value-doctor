@@ -6,53 +6,54 @@ import {
 	ChartTitle,
 	ChartLegend,
 } from '@progress/kendo-react-charts';
-const KPIChart = () => {
+const KPIChart = props => {
+	const { demand, stock } = props.data;
 	return (
 		<React.Fragment>
-			<Chart>
+			<Chart style={{ height: 250 }}>
 				<ChartTitle text='Demand accuracy' />
 				{/* <ChartLegend position='bottom' orientation='horizontal'  /> */}
 				<ChartSeries>
 					<ChartSeriesItem
-						color={'silver'}
+						color={'#000'}
 						type='bar'
-						data={[10]}
+						data={[demand[0]]}
 						// name='AS-IS'
 					/>
 					<ChartSeriesItem
-						color={'salmon'}
+						color={'#F7C62F'}
 						type='bar'
-						data={[5]}
+						data={[demand[1]]}
 						// name='Planned'
 					/>
 					<ChartSeriesItem
-						color={'skyblue'}
+						color={'#55AB1D'}
 						type='bar'
-						data={[20]}
+						data={[demand[2]]}
 						// name='Actual'
 					/>
 				</ChartSeries>
 			</Chart>
-			<Chart>
+			<Chart style={{ height: 250 }}>
 				<ChartTitle text='Stock Out' />
 				<ChartLegend position='bottom' orientation='horizontal' />
 				<ChartSeries>
 					<ChartSeriesItem
-						color={'silver'}
+						color={'#000'}
 						type='bar'
-						data={[10]}
+						data={[stock[0]]}
 						name='AS-IS'
 					/>
 					<ChartSeriesItem
-						color={'salmon'}
+						color={'#F7C62F'}
 						type='bar'
-						data={[5]}
+						data={[stock[1]]}
 						name='Planned'
 					/>
 					<ChartSeriesItem
-						color={'skyblue'}
+						color={'#55AB1D'}
 						type='bar'
-						data={[20]}
+						data={[stock[2]]}
 						name='Actual'
 					/>
 				</ChartSeries>

@@ -24,9 +24,7 @@ const SideNav = props => {
 					selected: window.location.pathname?.includes(item.text),
 				}))}
 				onSelect={onSelect}>
-				<DrawerContent style={{ height: '100%' }}>
-					{props.children}
-				</DrawerContent>
+				<DrawerContent>{props.children}</DrawerContent>
 			</Drawer>
 		</React.Fragment>
 	);
