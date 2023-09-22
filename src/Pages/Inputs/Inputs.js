@@ -1,7 +1,7 @@
 import React from 'react';
-import * as ReactDOM from 'react-dom';
 import { Grid, GridColumn } from '@progress/kendo-react-grid';
 import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
+import './Inputs.scss';
 import SupplyPlanningFoundationData from './SupplyPlanningFoundation.json';
 import ReplenishmentData from './Replenishment.json';
 import ForecastData from './Forecast.json';
@@ -14,15 +14,8 @@ const Inputs = () => {
 	return (
 		<TabStrip selected={selected} onSelect={handleSelect}>
 			<TabStripTab title='Supply Planning Foundation Data'>
-				<Grid
-					editField='inEdit'
-					style={{
-						height: '100%',
-						width: '100%',
-					}}
-					data={SupplyPlanningFoundationData}
-				>
-					<GridColumn field='SNO' title='SNO' width='40px' />
+				<Grid data={SupplyPlanningFoundationData} resizable={true}>
+					<GridColumn field='SNO' title='SNO' />
 					<GridColumn field='Month' title='Month' />
 					<GridColumn field='Data' title='Data' />
 					<GridColumn field='Custom' title='Custom' />
@@ -89,6 +82,7 @@ const Inputs = () => {
 						width: '100%',
 					}}
 					data={ReplenishmentData}
+					resizable={true}
 				>
 					<GridColumn field='SNO' title='SNO' width='40px' />
 					<GridColumn field='Data' title='Data' />
@@ -153,12 +147,12 @@ const Inputs = () => {
 				<Grid
 					style={{
 						height: '100%',
-						width: '100%',
 					}}
 					data={ForecastData}
+					resizable={true}
 				>
 					<GridColumn field='SNO' title='SNO' width='40px' />
-					<GridColumn field='Data' title='Data' />
+					<GridColumn field='Data' title='Data' width='100px' />
 					<GridColumn field='Custom' title='Custom' />
 					<GridColumn
 						field='Industry sprint plan'
