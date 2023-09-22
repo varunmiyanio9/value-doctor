@@ -6,8 +6,6 @@ import {
 	ChartTitle,
 	ChartValueAxis,
 	ChartValueAxisItem,
-	ChartXAxisItem,
-	ChartXAxis,
 	ChartLegend,
 } from '@progress/kendo-react-charts';
 import 'hammerjs';
