@@ -1,5 +1,4 @@
 import React from 'react';
-import * as ReactDOM from 'react-dom';
 import { Grid, GridColumn } from '@progress/kendo-react-grid';
 import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
 import SupplyPlanningFoundationData from './SupplyPlanningFoundation.json';
@@ -20,8 +19,7 @@ const Inputs = () => {
 						height: '100%',
 						width: '100%',
 					}}
-					data={SupplyPlanningFoundationData}
-				>
+					data={SupplyPlanningFoundationData}>
 					<GridColumn field='SNO' title='SNO' width='40px' />
 					<GridColumn field='Month' title='Month' />
 					<GridColumn field='Data' title='Data' />
@@ -88,8 +86,7 @@ const Inputs = () => {
 						height: '100%',
 						width: '100%',
 					}}
-					data={ReplenishmentData}
-				>
+					data={ReplenishmentData}>
 					<GridColumn field='SNO' title='SNO' width='40px' />
 					<GridColumn field='Data' title='Data' />
 					<GridColumn field='Custom' title='Custom' />
@@ -155,8 +152,7 @@ const Inputs = () => {
 						height: '100%',
 						width: '100%',
 					}}
-					data={ForecastData}
-				>
+					data={ForecastData}>
 					<GridColumn field='SNO' title='SNO' width='40px' />
 					<GridColumn field='Data' title='Data' />
 					<GridColumn field='Custom' title='Custom' />

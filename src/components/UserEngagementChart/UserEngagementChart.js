@@ -6,7 +6,7 @@ const pointer = {
 };
 const gaugeStyles = {
 	display: 'block',
-	height: '180px',
+	height: 150,
 };
 const GaugeContainer = () => (
 	<React.Fragment>
