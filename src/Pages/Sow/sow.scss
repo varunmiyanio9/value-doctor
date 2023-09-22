@@ -1,0 +1,165 @@
+.light-green {
+	background-color: lightgreen;
+}
+.light-yellow {
+	background-color: lightyellow;
+}
+.bold {
+	font-weight: bold;
+}
+.segment {
+	height: 600px;
+	border-bottom: 2px solid black;
+	.segment-left {
+		float: left;
+		width: 49%;
+		height: 100%;
+		border-right: 1px solid black;
+	}
+
+	.segment-right {
+		float: right;
+		width: 49%;
+		height: 100%;
+		margin-right: 10px;
+	}
+
+	.sales-seg {
+		text-align: left;
+		height: 150px;
+		border-bottom: 1px solid black;
+		.sales-pic-section {
+			width: 30%;
+			float: left;
+			height: 100%;
+			.sales-pic-section-img {
+				margin-top: 15px;
+			}
+		}
+		.sales-desc-section {
+			width: 68%;
+			float: left;
+			.scd-values {
+				float: right;
+			}
+			.sc-text {
+				font-size: 24px;
+				margin-left: 75px;
+			}
+			div {
+				border-bottom: 1px dotted black;
+			}
+		}
+	}
+	.marketing-seg {
+		height: 50px;
+		border-bottom: 1px solid black;
+		text-align: left;
+		font-weight: bold;
+		.marketing-pic-section {
+			width: 30%;
+			float: left;
+			.marketing-pic-section-img {
+				margin-top: 5px;
+			}
+		}
+		.marketing-desc-section {
+			width: 68%;
+			float: left;
+		}
+	}
+
+	.sow-seg {
+		text-align: left;
+		.sow {
+			font-weight: bold;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+		div {
+			margin-top: 25px;
+		}
+	}
+
+	.key-seg {
+		text-align: left;
+		height: 200px;
+		border-bottom: 1px solid black;
+		padding-top: 10px;
+		.key-pic-seg {
+			float: left;
+			width: 30%;
+			height: 100%;
+			.key-pic-seg-img {
+				margin-top: 50px;
+			}
+		}
+		.key-desc-seg {
+			width: 68%;
+			height: 100%;
+			float: left;
+			div {
+				margin-top: 15px;
+			}
+			.sh {
+				text-align: center;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.projections-seg {
+		height: 200px;
+		text-align: left;
+		border-bottom: 1px solid black;
+		.promise-seg {
+			width: 49%;
+			height: 100%;
+			border-right: 1px solid black;
+			float: left;
+			.promise-text {
+				position: relative;
+				bottom: 75px;
+				left: 175px;
+			}
+			.promise-seg-img {
+				margin-top: 30px;
+			}
+		}
+		.propositions-seg {
+			width: 49%;
+			height: 50%;
+			border-bottom: 1px solid black;
+			float: left;
+			.proposition-images {
+				width: 10%;
+				height: 30%;
+				margin: 10px 20px 0 20px;
+			}
+		}
+		.implemention-partner-seg {
+			width: 30%;
+			height: 50%;
+			float: left;
+			border-right: 1px solid black;
+			.ips-img {
+				margin-left: 45px;
+			}
+		}
+	}
+
+	.deviation-seg {
+		width: 100%;
+		height: 198px;
+		.deviation-blocks {
+			width: 50%;
+			height: 100%;
+			float: left;
+			text-align: left;
+			padding-top: 20px;
+			.deviation-text {
+				margin-top: 50px;
+			}
+		}
+	}
+}
