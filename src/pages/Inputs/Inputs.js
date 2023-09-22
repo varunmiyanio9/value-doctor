@@ -7,12 +7,12 @@ import ReplenishmentData from './Replenishment.json';
 import ForecastData from './Forecast.json';
 
 const Inputs = () => {
-	const [selected, setSelected] = React.useState(1);
+	const [selected, setSelected] = React.useState(0);
 	const handleSelect = e => {
 		setSelected(e.selected);
 	};
 	return (
-		<TabStrip selected={selected} onSelect={handleSelect}>
+		<TabStrip selected={selected} onSelect={handleSelect} ov>
 			<TabStripTab title='Supply Planning Foundation Data'>
 				<Grid data={SupplyPlanningFoundationData} resizable={true}>
 					<GridColumn field='SNO' title='SNO' />
@@ -82,8 +82,7 @@ const Inputs = () => {
 						width: '100%',
 					}}
 					data={ReplenishmentData}
-					resizable={true}
-				>
+					resizable={true}>
 					<GridColumn field='SNO' title='SNO' width='40px' />
 					<GridColumn field='Data' title='Data' />
 					<GridColumn field='Custom' title='Custom' />
@@ -149,8 +148,7 @@ const Inputs = () => {
 						height: '100%',
 					}}
 					data={ForecastData}
-					resizable={true}
-				>
+					resizable={true}>
 					<GridColumn field='SNO' title='SNO' width='40px' />
 					<GridColumn field='Data' title='Data' width='100px' />
 					<GridColumn field='Custom' title='Custom' />
