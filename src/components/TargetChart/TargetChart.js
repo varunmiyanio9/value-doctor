@@ -13,10 +13,15 @@ import {
 // const sunnyIcon =
 // 	'https://demos.telerik.com/kendo-ui/content/dataviz/chart/images/sunny.png';
 const categories = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'];
+const chartData = [
+	[100, 150, 190, 210, 240, 260, 300],
+	[10, 50, 60, 70, 100, 150, 200],
+	[0, 15, 20, 30, 35, 50, 75],
+];
 
 const ChartContainer = () => (
 	<Chart>
-		<ChartTitle text='Team Efficiency' />
+		<ChartTitle text='Growth Tracker' />
 		<ChartLegend
 			position='bottom'
 			orientation='horizontal'
@@ -37,8 +42,8 @@ const ChartContainer = () => (
 			<ChartSeriesItem
 				type='line'
 				color='#000'
-				name='Industry Std'
-				data={[123, 276, 310, 212, 240, 156, 250]}
+				name='Industry STD'
+				data={chartData[0]}
 				markers={{
 					background: '#323232',
 					size: 10,
@@ -48,7 +53,7 @@ const ChartContainer = () => (
 				color='#F7C62F'
 				name='Target'
 				type='line'
-				data={[165, 210, 287, 144, 190, 167, 212]}
+				data={chartData[1]}
 				dashType='dot'
 				markers={{
 					// visible: true,
@@ -104,7 +109,7 @@ const ChartContainer = () => (
 				color='#55AB1D'
 				name='Actual'
 				type='line'
-				data={[56, 140, 195, 46, 123, 78, 95]}
+				data={chartData[2]}
 				markers={{
 					background: 'green',
 					size: 10,
