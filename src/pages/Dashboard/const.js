@@ -16677,3 +16677,5 @@ export const improvedMargin = [5, 15, 9];
 export const improvedEfficiency = [20, 60, 35];
 export const improvedAutomation = [18, 60, 39];
 export const improvedDesisionSupport = [8, 50, 21];
+export const kpiDemandAccuracy = [20, 45, 29];
+export const kpiStockOut = [25, 3, 17];

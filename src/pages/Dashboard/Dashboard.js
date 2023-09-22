@@ -4,6 +4,8 @@ import { DateRangePicker } from '@progress/kendo-react-dateinputs';
 import TargetChart from '../../components/Chart';
 import BarChart from '../../components/BarChart';
 import KPIChart from '../../components/KPIChart';
+import UserEngagementChart from '../../components/UserEngagementChart';
+
 import * as CONST from './const';
 import './Dashboard.scss';
 
@@ -115,9 +117,13 @@ const Dashboard = props => {
 			</div>
 			<div className='card-component'>
 				<div className='card-component-item'>
-					<KPIChart />
+					<KPIChart
+						data={{ demand: CONST.kpiDemandAccuracy, stock: CONST.kpiStockOut }}
+					/>
 				</div>
-				<div className='card-component-item'></div>
+				<div className='card-component-item'>
+					<UserEngagementChart />
+				</div>
 				<div className='card-component-item'></div>
 			</div>
 		</div>
