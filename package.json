@@ -8,6 +8,7 @@
     "@progress/kendo-react-buttons": "^5.18.0",
     "@progress/kendo-react-charts": "^5.18.0",
     "@progress/kendo-react-dateinputs": "^5.18.0",
+    "@progress/kendo-react-gauges": "^5.18.0",
     "@progress/kendo-react-grid": "^5.18.0",
     "@progress/kendo-react-indicators": "^5.18.0",
     "@progress/kendo-react-intl": "^5.18.0",

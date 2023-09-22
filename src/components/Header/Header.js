@@ -6,8 +6,8 @@ import {
 	Avatar,
 } from '@progress/kendo-react-layout';
 import { Badge, BadgeContainer } from '@progress/kendo-react-indicators';
-
 import './Header.scss';
+import adidasLogo from '../../assets/logo/adidas-logo.png';
 
 const kendokaAvatar =
 	'https://www.telerik.com/kendo-react-ui-develop/components/images/kendoka-react.png';
@@ -33,6 +33,9 @@ const Header = props => {
 
 				<AppBarSection>
 					<h1 className='title'>o9</h1>
+				</AppBarSection>
+				<AppBarSection>
+					<img className='BrandLogo' src={adidasLogo} alt='adidas' />
 				</AppBarSection>
 
 				<AppBarSpacer
